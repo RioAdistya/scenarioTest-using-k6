@@ -9,7 +9,7 @@ export let options = {
   iterations: 3500, 
   thresholds: {
     // Maximum tolerance limit for API response time
-    'http_req_duration': ['p(95)<=2000'], 
+    'http_req_duration': ['p(95)<=2000'],  
   },
 };
 
@@ -48,7 +48,7 @@ export default function () {
     });
   
     sleep(1);
-  })
+  });
 }
 
 export function handleSummary(data) {
